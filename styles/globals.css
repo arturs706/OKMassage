@@ -1,16 +1,74 @@
-html,
-body {
-  padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  line-height: 1.8;
+  font-size: 2.2vh;
+  color: #b59771;
+
+}
+.icon-class-name {
+  margin-bottom: 0.2rem;
+  font-size: 1.1rem;
+  margin-right: 1.5rem;
+  
+  color: #b59771;
+}
+.icon-class-name-footer {
+  margin: 0.2vh 1.4vh 0 0;
+  font-size: 1.4rem;
+  color: #b36b51;
+  margin-right: 4vh;
+}
+.icon-class-name-cont4 {
+  margin: 1.4vh 8.9vh 0.4vh 0.4vh;
+  font-size: 4rem;
+  color: #d0f7f4;
+}
+
+h3 {
+  color: #b59771;
 }
 
 a {
-  color: inherit;
   text-decoration: none;
+  color: #b59771;
 }
 
-* {
-  box-sizing: border-box;
+.rec.rec-carousel-wrapper .rec-carousel button {
+  background: transparent;
+  width: 0;
+}
+.image {
+  border-radius: 1.7vh;
+}
+/* Left Arrow Styles */
+
+.rec.rec-arrow.rec.rec-arrow-left {
+  background: transparent;
+  border: none;
+
+}
+
+/* Right Arrow Styles */
+ 
+.rec.rec-arrow.rec.rec-arrow-right {
+  background: transparent;
+  border: none;
+}
+
+.rec.rec-carousel-wrapper .rec-pagination .rec.rec-dot.rec {
+  box-shadow: none;
+  border: 0.1rem solid white;
+}
+
+.rec.rec-carousel-wrapper .rec-pagination .rec.rec-dot.rec.rec-dot_active {
+  background: #b59771;
+  
 }

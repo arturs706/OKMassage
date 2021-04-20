@@ -1,0 +1,83 @@
+.ul {
+    display: inline-flex;
+    list-style: none;
+    width: 83%;
+    position: absolute;
+    left: 10rem;
+    padding-top: 5.4rem;
+    z-index: 100;
+}
+.li {
+    display: inline;
+    list-style: none;
+    letter-spacing: 0.2rem;
+    font-size: 1rem;
+    padding: 0 1.5rem;
+    z-index: 1;
+}
+.a {
+    padding: 5.4 rem;
+    cursor: pointer;
+}
+.p {
+    letter-spacing: 0.4rem;
+    font-size: 1.6rem;
+    line-height: 2;
+    max-width: 30rem;
+}
+.line {
+    width: 28.2rem;
+  height: 0.1vh;
+  background: black;
+  position: absolute;
+  left: 19rem;
+  top: 33rem;
+}
+.title {
+    width: 55rem;
+    height: 70%;
+    padding: 12rem 0rem 0rem 19rem;
+    display: flex;
+    top: 7vh;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+}
+.span {
+    font-weight: 500;
+    font-size: 3.2rem;
+    letter-spacing: 0.6rem;
+}
+
+@media (max-width: 1045px) {
+    .li {
+        display: none;
+    }
+    .title {
+        padding: 12rem 0rem 0rem 9rem;
+        width: 34rem;
+    }
+    .span {
+        font-size: 2.2rem;
+    }
+    .p {
+        font-size: 1.1rem; 
+    }
+    .line {
+    left: 9rem;
+    top: 28rem;
+    width: 21rem;
+    }
+}
+@media (max-width: 1345px) {
+    .title {
+        padding: 12rem 0rem 0rem 11.4rem;
+    }
+    .line {
+        left: 11.4rem;
+        }
+}
