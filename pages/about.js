@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
-import Fees from './Images/fees.jpg'
 import Fade from 'react-reveal/Fade';
 
 
