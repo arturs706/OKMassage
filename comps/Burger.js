@@ -27,6 +27,9 @@ const DivStyle = styled.div `
         border-radius: 20rem;
         transform-origin: -0.63vh;
         transition: all 0.3s linear;
+        @media (max-width: 824px) {
+        transform-origin: 0vh;
+        }
 
         &:nth-child(1) {
             transform: ${({ open }) => open ? 'rotate(405deg)' : 'rotate(0)'};
