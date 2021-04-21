@@ -19,14 +19,14 @@ const DivStyle = styled.div `
         top: 0.7rem;
         left: 1.5rem;
 
-    };
+    }
 
     div {
         width: 3rem;
         height: 0.3rem; 
         background-color: ${({ open }) => open ? '#000' : '#000'};
         border-radius: 20rem;
-        transform-origin: -0.32rem;
+        transform-origin: -5px;
         transition: all 0.3s linear;
 
         &:nth-child(1) {
