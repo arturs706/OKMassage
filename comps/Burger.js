@@ -19,7 +19,7 @@ const DivStyle = styled.div `
         top: 0.7rem;
         left: 1.5rem;
 
-    }
+    };
 
     div {
         width: 3rem;
