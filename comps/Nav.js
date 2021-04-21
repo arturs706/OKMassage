@@ -109,6 +109,18 @@ const Spantwo = styled.span `
         display: flex;
         font-size: 4.4vh;
         width: 50%;
+        font-weight: 900;
+        margin-bottom: 1rem;
+    }
+    @media  (max-width: 530px) {
+        font-size: 2rem;
+        padding-top: 0.45rem;
+        padding-right: 0.1rem;
+    }
+    @media  (max-width: 410px) {
+        font-size: 1.6rem;
+        margin-top: 0.5rem;
+
     }
 `
 
