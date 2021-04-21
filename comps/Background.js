@@ -3,7 +3,7 @@ import Image from 'next/image'
 import styled from 'styled-components'
 
 const Box =  styled.div `
-    z-index: 0;
+    z-index: -1;
     @media (max-width: 824px){
         display: none;
     }
@@ -26,7 +26,9 @@ const Background = () => {
     return (
         <>
         <Box>
+
           <Image 
+          
             src="/images/lotu.jpg"
             alt="Image"
             layout="fill"
@@ -34,9 +36,12 @@ const Background = () => {
             object-position = "left top"
             quality ="100">
         </Image>
+
+
         </Box>
 
       <Box2>
+
       <Image 
         src="/images/lotusmobile.jp2"
         alt="Image"
@@ -45,8 +50,12 @@ const Background = () => {
         object-position = "left top"
         quality ="100">
     </Image>
+
     </Box2>
+
+
     <Box3>
+
       <Image 
         src="/images/lotusmobilesmall.jp2"
         alt="Image"
@@ -55,7 +64,9 @@ const Background = () => {
         object-position = "left top"
         quality ="100">
     </Image>
+
     </Box3>
+
     </>
     )
 }
