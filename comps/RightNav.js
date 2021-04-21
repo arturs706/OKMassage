@@ -24,14 +24,17 @@ const Li = styled.li `
     padding: 5.4rem 1.5rem 2rem 1rem;
     z-index: 1;
 `
+const A = styled.a `
+    cursor: pointer;`
+
 const RightNav = ({ open }) => {
   return (
     <Ul open={open}>
-                <Li>HOME</Li>
-                <Li>SERVICES</Li>
-                <Li>FEES</Li>
-                <Li>BOOK AN APPOINTMENT</Li>
-                <Li>CONTACT US</Li>
+                <Link href="/" passHref><A><Li>HOME</Li></A></Link>
+                <Link href="/services" passHref><A><Li>SERVICES</Li ></A></Link>
+                <Link href="/fees" passHref><A><Li>FEES</Li></A></Link>
+                <Link href="/appointment" passHref><A><Li>BOOK AN APPOINTMENT</Li></A></Link>
+                <Link href="/contact" passHref><A><Li>CONTACT US</Li></A></Link>
     </Ul>
   )
 }
