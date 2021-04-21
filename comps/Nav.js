@@ -6,6 +6,7 @@ import Icons from './Icons'
 import { IconContext } from "react-icons";
 import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
 import styled from 'styled-components'
+import Fade from 'react-reveal/Fade';
 
 const Ul = styled.ul `
     display: inline-flex;
@@ -124,33 +125,30 @@ const Spantwo = styled.span `
     }
 `
 
-
-
-
-
-
-
-
-
-
-
-
-
 const Nav = () => {
     return (
+        
         <Container>
+
             <Background/>
+
             <Ul> 
-                <Burger/>        
+                <Burger/>
+                <Fade bottom distance = "300px" delay = {500} duration = {3000} ssrFadeout = {true}>
+        
                 <Link href="/" passHref><A><Li>HOME</Li></A></Link>
                 <Link href="/services" passHref><A><Li>SERVICES</Li ></A></Link>
                 <Link href="/fees" passHref><A><Li>FEES</Li></A></Link>
                 <Link href="/appointment" passHref><A><Li>BOOK AN APPOINTMENT</Li></A></Link>
                 <Link href="/contact" passHref><A><Li>CONTACT US</Li></A></Link>
-            </Ul>  
+                </Fade>
 
+            </Ul>  
             <Ulhead>
+            <Fade bottom distance = "300px" delay = {1000} duration = {3000} ssrFadeout = {true}>
+
             <Spantwo>OK = massage</Spantwo>
+            </Fade>
             <div>
             <IconContext.Provider value={{className: "icon-class-name-head" }}>
             
@@ -162,16 +160,24 @@ const Nav = () => {
 
 
             <Title>
+            <Fade bottom distance = "300px" delay = {1500} duration = {3000} ssrFadeout = {true}>
 
 <Span>OK = massage</Span>
+</Fade>
 <br/>
+<Fade bottom distance = "300px" delay = {2000} duration = {3000} ssrFadeout = {true}>
 
 <P>Mobile massage therapist based in North London</P>
+</Fade>
 
 </Title>
+<Fade bottom distance = "300px" delay = {2500} duration = {3000} ssrFadeout = {true}>
 
 <Line/>
+</Fade>
+
 <Icons />
+
 </Container>
     )
 }
