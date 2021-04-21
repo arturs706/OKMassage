@@ -6,16 +6,19 @@ import styled from 'styled-components'
 const IconMenu = styled.div`
 display: flex;
 flex-direction: column;
-margin: 17.9rem 11.5rem;
+margin: 17.9rem 3.6rem;
 position: absolute;
 z-index: 1;
 max-width: 100rem;
 @media (max-width: 1345px) {
-    margin: 16.9rem 5.5rem;
+    margin: 16.9rem 3.5rem;
+    }
+@media (max-width: 824px) {
+    position: fixed;
+    margin: 16.9rem 2rem;
 
     }
 `
-
 
 function Icons(props) {
     return (

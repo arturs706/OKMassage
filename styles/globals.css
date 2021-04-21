@@ -11,25 +11,31 @@ body {
   line-height: 1.8;
   font-size: 2.2vh;
   color: #b59771;
-
 }
+
 .icon-class-name {
   margin-bottom: 0.2rem;
   font-size: 1.1rem;
   margin-right: 1.5rem;
-  
   color: #b59771;
 }
+
 .icon-class-name-footer {
   margin: 0.2vh 1.4vh 0 0;
   font-size: 1.4rem;
   color: #b36b51;
   margin-right: 4vh;
 }
+
 .icon-class-name-cont4 {
   margin: 1.4vh 8.9vh 0.4vh 0.4vh;
   font-size: 4rem;
   color: #d0f7f4;
+}
+
+.icon-class-name-head {
+  font-size: 3.5rem;
+  margin-top: 0.5rem;
 }
 
 h3 {
@@ -53,7 +59,6 @@ a {
 .rec.rec-arrow.rec.rec-arrow-left {
   background: transparent;
   border: none;
-
 }
 
 /* Right Arrow Styles */
@@ -70,5 +75,14 @@ a {
 
 .rec.rec-carousel-wrapper .rec-pagination .rec.rec-dot.rec.rec-dot_active {
   background: #b59771;
-  
 }
+@media (max-width: 667px) {
+  .icon-class-name-head {
+    font-size: 2.5rem;
+  }
+};
+@media (max-width: 736px) {
+  .icon-class-name-head {
+    display: none;
+ }
+};

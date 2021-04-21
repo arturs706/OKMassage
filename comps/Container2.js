@@ -17,9 +17,15 @@ const Container = styled.div`
         justify-content: space-between;
         align-items: center;
         height: 70vh;
-        margin-bottom: 5rem;
-
+        margin-bottom: 14rem;
     }
+     @media (max-width: 824px){
+        margin-bottom: 15rem;
+    }
+    @media (max-height: 487px){
+        height: 100vh;
+        padding-bottom: 5rem;
+        }
 `
 const ContainerHalf2 = styled.div`
     grid-area: ContainerHalf1;
@@ -28,17 +34,26 @@ const ContainerHalf2 = styled.div`
         text-align: justify;
         height: 60vh;
         padding: 0 20vh 5vh 20vh;}
+    @media (max-width: 824px){
+        width: 100%;
+        padding: 3rem;
+        text-align: center;}
+        @media (max-height: 443px){
+        padding: 0 10rem 2rem 10rem;}
+
 `
 const ContainerHalf1 = styled.div`
     grid-area: ContainerHalf2;
     align-self: center;
-
 `
 
 const Heading1 = styled.span `
     font-weight: 900;
     font-size: 4.2vh;
     letter-spacing: 1.1vh;
+    @media (max-width: 824px){
+        font-size: 3.6vh;
+    }
 `
 const Parag = styled.p `
     letter-spacing: 0.4vh;
@@ -48,6 +63,9 @@ const Parag = styled.p `
     @media (max-width: 1345px) {
         padding-right: 0;
 }
+@media (max-width: 824px){
+        font-size: 1.6vh;
+    }
 `
 
 

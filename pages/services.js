@@ -11,8 +11,8 @@ const Container = styled.div`
     flex-direction: row;
     flex-wrap: wrap;
     padding-top: 10vh;
-
 `
+
 const Container1 = styled.div`
     grid-area: Container1;
     display: flex;

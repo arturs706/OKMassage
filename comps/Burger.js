@@ -6,17 +6,21 @@ const DivStyle = styled.div `
     width: 0.2rem;
     height: 3.2rem;
     position: fixed;
-    top: 4.6rem;
-    left: 5rem;
+    top: 0.9rem;
+    left: 3rem;
     padding-right: 4.5rem;
     display: flex;
     justify-content: space-around;
     flex-flow: column nowrap;
     z-index: 999;
     cursor: pointer;
+    @media (max-width: 824px) {
+        height: 2.5rem;
+        top: 0.7rem;
+        left: 1.5rem;
 
+    }
 
-    
     div {
         width: 3rem;
         height: 0.3rem; 
@@ -50,6 +54,7 @@ const DivStyle = styled.div `
             height: 0.25rem;
 
         }
+        
     }
 `
 

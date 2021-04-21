@@ -4,7 +4,7 @@
     width: 83%;
     position: absolute;
     left: 10rem;
-    padding-top: 5.4rem;
+    padding-top: 1.6rem;
     z-index: 100;
 }
 .li {
@@ -15,6 +15,7 @@
     padding: 0 1.5rem;
     z-index: 1;
 }
+
 .a {
     padding: 5.4 rem;
     cursor: pointer;
@@ -30,13 +31,13 @@
   height: 0.1vh;
   background: black;
   position: absolute;
-  left: 19rem;
+  left: 12rem;
   top: 33rem;
 }
 .title {
     width: 55rem;
     height: 70%;
-    padding: 12rem 0rem 0rem 19rem;
+    padding: 12rem 0rem 0rem 11.5rem;
     display: flex;
     top: 7vh;
     flex-direction: column;
@@ -52,11 +53,48 @@
     font-size: 3.2rem;
     letter-spacing: 0.6rem;
 }
-
+.ulhead {
+    display: none;
+    position: absolute;
+    z-index: 2;
+}
+.spantwo {
+    display: none;
+}
 @media (max-width: 1045px) {
+    .spantwo {
+        display: flex;
+        font-size: 4.4vh;
+        width: 50%;
+    }
+    .title {
+        width: 1rem;
+        display: none;
+    }
+    .span {
+        display: none;
+    }
+    .p {
+        display: none;
+    }
+    .line {
+        display: none;
+    }
     .li {
         display: none;
     }
+    .ul {    width: 50%;
+    }
+
+    .ulhead {
+        display: flex;
+        position: absolute;
+        z-index: 2;
+        width: 98%;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
     .title {
         padding: 12rem 0rem 0rem 9rem;
         width: 34rem;
@@ -80,4 +118,13 @@
     .line {
         left: 11.4rem;
         }
+}
+@media (max-width: 667px) {
+
+};
+@media (max-width: 736px) {
+
+};
+@media (max-width: 824px) {
+ 
 }

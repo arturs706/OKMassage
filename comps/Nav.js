@@ -4,6 +4,8 @@ import styles from '../styles/Nav.module.css'
 import Burger from './Burger'
 import Background from './Background'
 import Icons from './Icons'
+import { IconContext } from "react-icons";
+import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
 
 const Nav = () => {
     return (
@@ -17,12 +19,27 @@ const Nav = () => {
                 <Link href="/appointment" passHref><a><li className = {styles.li}>BOOK AN APPOINTMENT</li></a></Link>
                 <Link href="/contact" passHref><a><li className = {styles.li}>CONTACT US</li></a></Link>
             </ul>  
+
+            <ul className = {styles.ulhead}>
+            <span className = {styles.spantwo}>OK = massage</span>
+            <div>
+            <IconContext.Provider value={{className: "icon-class-name-head" }}>
+            
+            <AiOutlineMail/>
+            <AiOutlinePhone/>
+            </IconContext.Provider>
+            </div>
+            </ul>
+
+
             <div className = {styles.title}>
 
 <span className = {styles.span}>OK = massage</span>
 <br/>
 
-<p className = {styles.p}>Mobile massage therapist based in North London</p></div>
+<p className = {styles.p}>Mobile massage therapist based in North London</p>
+
+</div>
 
 <div className = {styles.line}/>
 <Icons />

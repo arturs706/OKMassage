@@ -15,9 +15,13 @@ const Container = styled.div`
         flex-direction: column-reverse;
         justify-content: space-between;
         align-items: center;
-        height: 70vh;
-
+        height: 50vh;
     }
+    @media (max-height: 540px){
+        height: 100vh;}
+        @media (max-height: 450px){
+        height: 40vh;
+}
 `
 const ContainerHalf1 = styled.div`
     grid-area: ContainerHalf1;
@@ -31,19 +35,29 @@ const ContainerHalf2 = styled.div`
         text-align: justify;
         height: 60vh;
         padding: 0 20vh 5vh 20vh;}
+        @media (max-width: 824px){
+        width: 100%;
+        padding: 3rem;
+        text-align: center;}
+        @media (max-height: 443px){
+        padding: 0 10rem 2rem 10rem;}
 `
 
 const Heading1 = styled.span `
     font-weight: 900;
     font-size: 4.2vh;
     letter-spacing: 1.1vh;
+    @media (max-width: 824px){
+        font-size: 3.6vh;
+    }
 `
 const Parag = styled.p `
     letter-spacing: 0.4vh;
     line-height: 1.8;
     text-align: justify;
-    
-
+    @media (max-width: 824px){
+        font-size: 1.6vh;
+    }
     `
 
 function Container3() {

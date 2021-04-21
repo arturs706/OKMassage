@@ -19,9 +19,8 @@ const Container = styled(animated.div)`
     cursor: pointer;
     background-clip: border-box;
     align-items: center;
-
-        }
 `
+
 const Btn = styled.div`
     padding: 2vh;
     max-width: 20vh;

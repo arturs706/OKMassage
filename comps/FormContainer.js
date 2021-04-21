@@ -12,13 +12,29 @@ const Heading1 = styled.span `
     font-weight: 900;
     font-size: 4.2vh;
     letter-spacing: 1.1vh;
+    width: 100%;
     text-align: left;
-    padding: 0 7.7vh 10vh 0;
+    padding: 12rem 0rem 2rem 19rem;
+    @media (max-width: 1245px) {
+        padding: 12rem 0rem 3rem 1rem;
+    }
+
+    @media (max-width: 1045px) {
+        padding: 12rem 0rem 2rem 0rem;}
+    @media (max-width: 824px){
+    padding: 0;
+    text-align: center;
+}
+    @media (max-width: 824px){
+    padding: 0;
+    text-align: center;
+    font-size: 3.6vh;
+    }
 `
 const MainContainer = styled.div`
     display: flex;
     flex-direction: column;
-    height: 80vh;
+    height: 100vh;
     z-index: 1;
     width: 100%;
     justify-content: center;
@@ -28,6 +44,16 @@ const MainContainer = styled.div`
         height: 120vh;
         padding-left: 14rem;
         }
+    @media (max-width: 824px){
+        padding: 0;
+        padding-left: 3rem;
+        overflow: hidden;
+    }
+    @media (max-height: 540px){
+        height: 110vh;
+}
+
+
 `
 const Parag = styled.p `
     font-size: 1.2rem;
@@ -50,6 +76,12 @@ display: flex;
 flex-direction: column;
 align-items: center;
 margin: 3vh;
+@media (max-width: 650px) {
+    width: 22rem;
+    height: 60vh;
+    justify-content: center;
+}
+
 
 `
 const Heading2 = styled.span `
@@ -81,6 +113,11 @@ const Input2 = styled.button`
     color: #836b51;
     font-family: 'Playfair Display', serif;
     text-align: center;
+    cursor: pointer;
+    @media (max-width: 650px) {
+        display: flex;
+        justify-content: center;}
+
 
 `
 const Field2 = styled(Ffield)`
@@ -90,13 +127,21 @@ const Field2 = styled(Ffield)`
     width: 34vh;
     font-size: 1.9vh;    
     font-size: 1.9vh;
+    @media (max-width: 650px) {
+        display: flex;
+        justify-content: center;
+}
 
 `
 const Inside = styled.div`
     display: flex;
     flex-direction: row;
     width: 60vh;
-
+    @media (max-width: 650px) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+}
 `
 const NameSurnEmail = styled.div`
     display: flex;
@@ -104,7 +149,8 @@ const NameSurnEmail = styled.div`
     justify-content: space-between;
     width: 40vh;
     height: 19vh;
-    
+    @media (max-width: 650px) {
+        padding-left: 4.2rem;}
 
 `
 const Container = styled.div `
@@ -135,8 +181,9 @@ function FormContainer() {
 
     return (
         <div>
+
             <MainContainer>
-            <Heading1><Fade right distance = "300px" delay = {500} duration = {3000} ssrFadeout = {true}>HOW TO BOOK AN APPOINTMENT?</Fade></Heading1>
+            <Heading1><Fade right distance = "300px" delay = {500} duration = {3000} ssrFadeout = {true}>BOOK AN APPOINTMENT?</Fade></Heading1>
 
             <Container>
             <IconContext.Provider value={{className: "icon-class-name-cont4" }}>
@@ -183,7 +230,7 @@ function FormContainer() {
                 <br/>
 
                 </Inside>
-                <Input2 type="submit" value="Submit"></Input2>
+                <Input2 type="submit" value="Submit">Contact</Input2>
                 <BackgroundFooter/>    
 
             </Form>

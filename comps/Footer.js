@@ -17,9 +17,10 @@ const Foot = styled.div `
     width: 100%;
     height: 42vh;
     z-index: 12;
-    flex-wrap: wrap;
     position: absolute;
-    @media (max-width: 1440px) {
+    @media (max-width: 980px) {
+    justify-content: space-evently;
+    align-items: center;
 }
 `
 const Parag = styled.p `
@@ -38,8 +39,24 @@ const Divider = styled.div `
     width: 100%;
     height: 40vh;
     padding-right: 10rem;
+    @media (max-width: 980px) {
+        padding-right: 0; }
+        @media (max-width: 650px) {
+        padding-right: 3rem; 
+        height: 20vh;
+}
     `
 const Divider1 = styled.div `
+display: flex;
+flex-direction: column;
+width: 100%;
+height: 40vh;
+padding-right: 10rem;
+@media (max-width: 980px) {
+    display: none;
+}
+`
+const Divider3 = styled.div `
 display: flex;
 flex-direction: column;
 width: 100%;
@@ -60,7 +77,7 @@ function Footer() {
             <Foot>
             <BackgroundFooter/>
             <Fade left distance = "300px" delay = {100} duration = {3000} ssrFadeout = {true}>
-                <Divider><h3>SOCIAL MEDIA</h3>
+                <Divider3><h3>SOCIAL MEDIA</h3>
 
                 <Links>
                 <IconContext.Provider value={{className: "icon-class-name-footer" }}>
@@ -72,7 +89,7 @@ function Footer() {
                 <Parag><a href="https://wa.link/5j5c92"><RiWhatsappLine/></a>WhatsApp</Parag>
                 </IconContext.Provider>
                 </Links>
-                </Divider>
+                </Divider3>
             </Fade>
 
             <Fade left distance = "300px" delay = {200} duration = {4000} ssrFadeout = {true}>

@@ -17,12 +17,11 @@ const Container = styled.div `
 `
 const MainContainer = styled.div `
     width: 100%;
-    height: 110vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
 `
 const Heading1 = styled.span `
     font-weight: 900;
@@ -30,15 +29,19 @@ const Heading1 = styled.span `
     letter-spacing: 1.1vh;
     width: 100%;
     text-align: left;
-    padding: 12rem 0rem 0rem 19rem;
+    padding: 12rem 0rem 3rem 19rem;
     @media (max-width: 1045px) {
-        padding: 12rem 0rem 0rem 11.5rem;
-
+        padding: 12rem 0rem 2rem 11.5rem;}
+    @media (max-width: 824px){
+    padding: 0;
+    text-align: center;
+    font-size: 3.6vh;
     }
 `
 
 const breakPoints = [
-    {width: 500, itemsToShow: 2},
+    {width: 450, itemsToShow: 1},
+    {width: 650, itemsToShow: 2},
     {width: 800, itemsToShow: 3},
     {width: 1200, itemsToShow: 3},
     {width: 1800, itemsToShow: 4}

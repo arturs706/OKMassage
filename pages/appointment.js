@@ -92,7 +92,6 @@ const Li = styled.div `
     font-weight: 600;
     width: 100%;
     padding: 1rem;
-
 `
 const Parag = styled.p `
     font-size: 1.2rem;
