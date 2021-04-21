@@ -9,7 +9,11 @@ export default function Home() {
   return (
     <div>
     <Head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+      <meta charset="UTF-8"/>
+      <meta name="description" content="Free Web tutorials"/>
+      <meta name="keywords" content="Massage in Barnet, Massage in London, Spa, Day off "/>
+      <meta name="author" content="Arthur"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </Head>
       <Container1/>
       <Container2/>
