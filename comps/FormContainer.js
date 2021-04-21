@@ -39,9 +39,8 @@ const MainContainer = styled.div`
     width: 100%;
     justify-content: center;
     align-items: center;
-
     @media (max-width: 1245px) {
-        height: 120vh;
+        height: 140vh;
         padding-left: 14rem;
         }
     @media (max-width: 824px){
@@ -50,7 +49,8 @@ const MainContainer = styled.div`
         overflow: hidden;
     }
     @media (max-height: 540px){
-        height: 110vh;
+        height: 130vh;
+        margin-bottom: 5rem;
 }
 
 
@@ -81,17 +81,16 @@ margin: 3vh;
     height: 60vh;
     justify-content: center;
 }
-
-
 `
+
 const Heading2 = styled.span `
     font-weight: 900;
     font-size: 4.2vh;
     letter-spacing: 1.1vh;
     padding-bottom: 1vh;
     text-align: center;
-
 `
+
 const Field = styled(Ffield) `
     padding: 0.5rem;
     border: none;
@@ -116,10 +115,10 @@ const Input2 = styled.button`
     cursor: pointer;
     @media (max-width: 650px) {
         display: flex;
-        justify-content: center;}
-
-
+        justify-content: center;
+    }
 `
+
 const Field2 = styled(Ffield)`
     padding: 0.5rem;
     border: none;
@@ -131,8 +130,8 @@ const Field2 = styled(Ffield)`
         display: flex;
         justify-content: center;
 }
-
 `
+
 const Inside = styled.div`
     display: flex;
     flex-direction: row;
@@ -143,6 +142,7 @@ const Inside = styled.div`
         justify-content: center;
 }
 `
+
 const NameSurnEmail = styled.div`
     display: flex;
     flex-direction: column;
@@ -150,20 +150,24 @@ const NameSurnEmail = styled.div`
     width: 40vh;
     height: 19vh;
     @media (max-width: 650px) {
-        padding-left: 4.2rem;}
-
+        padding-left: 3.5rem;
+        height: 25vh;
+    }
 `
+
 const Container = styled.div `
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 `
+
 const initialValues = {
     firstname: '',
     lastname: '',
     email: '',
     message: '',
 }
+
 const onSubmit = values => {
     console.log('formd values', values)}
 
